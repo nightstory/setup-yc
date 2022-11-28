@@ -1,0 +1,12 @@
+name: 'setup-yc'
+description: 'Installs Yandex Cloud CLI and enables cache'
+branding:
+  icon: briefcase
+  color: blue
+inputs:
+  enable-cache:
+    description: 'Cache or not the installation'
+    required: false
+runs:
+  using: 'node16'
+  main: 'lib_main/index.js'

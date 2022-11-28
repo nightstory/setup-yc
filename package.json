@@ -1,0 +1,39 @@
+{
+  "name": "setup-yc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/.bin/ncc build --license licenses.txt --source-map -m -q src/main.ts -o lib_main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "github actions",
+    "yandex-cloud",
+    "yandex"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightstory/setup-yc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nightstory/setup-yc/issues"
+  },
+  "homepage": "https://github.com/nightstory/setup-yc#readme",
+  "author": "nightstory",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/cache": "^3.0.6",
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1",
+    "shelljs": "^0.8.5",
+    "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.15",
+    "@types/shelljs": "^0.8.11",
+    "@vercel/ncc": "^0.34.0"
+  }
+}
